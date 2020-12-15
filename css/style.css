@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+html {
+    background-image: url("../images/background.png");
+    color: darkslateblue;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 11pt;
+    text-align: center;
+}
+
+#container {
+    background-color: rgb(252, 246, 189);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px;
+    width: 400px;
+}
+
+#code, #happiness {
+    font-size: 30pt;
+    text-transform: uppercase;  
+}
+
+#happiness_container {
+    display: flex;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.star {
+    width: 10%;
+    height: 10%;
+    margin-top: 35px;
+}
+
+.star:first-child {
+    margin-right: 10px;
+}
+
+.star:last-child {
+    margin-left: 10px;
+}
+
+#door {
+    margin-top: 50px;
+}
+
+a img:hover {
+    content: url("../images/open_door.png");
+}
+
+
+#arrow {
+    width: 10%;
+}

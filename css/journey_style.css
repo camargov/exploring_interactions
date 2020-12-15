@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10pt;
+}
+
+html {
+    background-color: teal;
+    background-image: url("../images/background.png");
+    background-blend-mode: hue;
+}
+/* ***************************************************************** */
+/* Styling the head section */
+#head_section {
+    background-color: rgb(169, 222, 249);
+    width: 400px;
+    border-radius: 100%;
+}
+/* **************************************************************************
+Transition effects of head section                                            */
+#head_section:hover {
+    opacity: 0.5;
+    transition: opacity 1000ms;
+}
+
+#link_tag:hover {
+    color: white;
+    transition: color 2000ms;
+}
+/* ***************************************************************** */
+/* Styling the placement of the paragraph tags */
+.head_tag:first-child {
+    padding-top: 40px;
+}
+
+.head_tag:last-child {
+    padding-bottom: 40px;
+}
+
+#head_section p {
+    margin-left: 60px;
+}
+
+
+#head_content {
+    margin-left: 50px;
+}
+
+/* ***************************************************************** */
+/* Styling the body tags */
+.body_tag {
+    background-color: rgb(208, 244, 222);
+    margin-left: 60px;
+    padding: 30px;
+    border-radius: 100%;
+    width: 100px;
+}
+
+.body_content {
+    background-color: rgb(252, 246, 189);
+    padding: 30px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+#h1_content:hover ~ #other_h_content {
+    opacity: 0.2;
+}
+
+#big_headers:hover ~ #small_headers {
+    opacity: 0.2;
+}
+
+#unordered_list:hover ~ #ordered_list {
+    opacity: 0.2;
+}
+/* ***************************************************************** */
+/* Styling the h1 representations */
+
+#h1_content {
+    width: 200px;
+    text-align: center;
+    display: flex;
+    margin-left: 200px;
+}
+
+#h1_content p {
+    background-color: rgb(255, 153, 200);
+    color: white;
+    font-size: 22pt;
+    text-transform: uppercase;
+}
+
+#h1_content p:hover {
+    background-color:   rgb(208, 244, 222);
+    color: teal;
+}
+
+.h1_bubble {
+    background-color: rgb(255, 153, 200);
+    color: white;
+    font-size: 22pt;
+    text-transform: uppercase;
+    border-radius: 100%;
+    padding: 20px;
+    opacity: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#h1_morning:hover ~ #h1_morning_bubble {
+    opacity: 1;
+}
+
+#h1_afternoon:hover ~ #h1_afternoon_bubble {
+    opacity: 1;
+}
+
+#h1_evening:hover ~ #h1_evening_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the h content */
+
+#other_h_content {
+    margin-left: auto;
+    margin-right: auto;   
+    margin-bottom: 0px;
+}
+
+#other_h_content p {
+    width: 70px;
+}
+
+.bubble {
+    color: white;
+    border-radius: 100%;
+    padding: 30px;
+    opacity: 0;
+}
+/* ***************************************************************** */
+/* Styling the h2 content */
+
+#h2_example {
+    background-color: darkorange;
+    color: rgb(252, 246, 189);
+    font-size: 20pt;
+    margin-left: 50px;
+}
+
+#h2_bubble {
+    background-color: darkorange;
+    color: rgb(252, 246, 189);
+    font-size: 20pt;
+    margin-left: 220px;
+    width: 70px;
+}
+
+#h2_example:hover {
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: darkblue;
+    background-color:  rgb(169, 222, 249);
+}
+
+#h2_example:hover ~ #h2_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the h6 content */
+
+#h3_example, #h6_example {
+    margin-left: 400px;
+}
+
+#h3_example {
+    background-color:  rgb(252, 246, 189);
+    color: darkorange;
+    font-size: 18pt;
+}
+
+#h3_bubble {
+    margin-left: 70px;
+    background-color:  rgb(252, 246, 189);
+    color: darkorange;
+    font-size: 18pt;
+    width: 100px;
+}
+
+#h3_example:hover {
+    text-decoration: underline;
+    color: blueviolet;
+    background-color: rgb(228, 193, 249);
+}
+
+#h3_example:hover ~ #h3_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the h4 content */
+
+#h4_example {
+    margin-left: 300px;
+    background-color: rgb(208, 244, 222);
+    color: teal;
+    font-size: 16pt;
+}
+
+#h4_bubble {
+    margin-left: 480px;
+    background-color: rgb(208, 244, 222);
+    color: teal;
+    font-size: 16pt;
+    width: 90px;
+}
+
+#h4_example:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    background-color: rgb(255, 153, 200);
+    color: white;
+}
+
+#h4_example:hover ~ #h4_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the h5 content */
+
+#h5_example {
+    margin-left: 200px;
+    background-color: rgb(169, 222, 249);
+    color: darkblue;
+    font-size: 14pt;
+}
+
+#h5_bubble {
+    background-color: rgb(169, 222, 249);
+    color: darkblue;
+    font-size: 14pt;
+    width: 70px;
+}
+
+#h5_example:hover {
+    border-style: double;
+    background-color:  darkorange;
+    color: rgb(252, 246, 189);
+}
+
+#h5_example:hover ~ #h5_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the h6 content */
+
+#h6_example {
+    background-color: rgb(228, 193, 249);
+    color: blueviolet;
+    font-size: 12pt;
+}
+
+#h6_bubble {
+    background-color: rgb(228, 193, 249);
+    color: blueviolet;
+    font-size: 12pt;
+    width: 70px;
+}
+
+#h6_example:hover {
+    border-style: solid;
+    background-color: rgb(252, 246, 189);
+    color: darkorange;
+}
+
+#h6_example:hover ~ #h6_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the p content */
+
+#p_example {
+    margin-left: 150px;
+    background-color: rgb(255, 153, 200);
+    color: white;
+}
+
+#p_bubble {
+    margin-left: 200px;
+    background-color: rgb(255, 153, 200);
+    color: white;
+}
+
+#p_example:hover {
+    border-style: double;
+    background-color: rgb(208, 244, 222);
+    color: teal;
+}
+
+#p_example:hover ~ #p_bubble {
+    opacity: 1;
+}
+/* ***************************************************************** */
+/* Styling the images */
+
+img {
+    background-color: rgb(169, 222, 249);
+    border-radius: 100%;
+}
+
+#sun {
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+#sun:hover {
+    content: url("../images/sunglasses.png");
+    background-color: rgb(255, 153, 200);
+}
+
+#sunflower {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+#sunflower:hover {
+    content: url("../images/sunflower_big_smile.png");
+    background-color: rgb(208, 244, 222);
+}
+/* ***************************************************************** */
+/* Transition effects for list text */
+
+.list_title {
+    border-radius: 25px;
+}
+
+.li_1:hover {
+    background-color:  rgb(255, 153, 200);
+    color: white;
+}
+
+.li_2:hover {
+    background-color: darkorange;
+    color: rgb(252, 246, 189);
+}
+
+.li_3:hover {
+    background-color:  rgb(252, 246, 189);
+    color: darkorange;
+}
+
+.li_4:hover {
+    background-color:rgb(208, 244, 222);
+    color: teal;
+}
+
+.li_bubble {
+    color: white;
+}
+/* ***************************************************************** */
+/* Styling for unordered list text */
+
+#unordered_list, #ordered_list {
+    padding-left: 70px;
+}
+
+#unordered_list {
+    margin-left: 300px;
+}
+
+#unordered_list li {
+    list-style-type: none;
+    background-color: darkblue;
+    color: rgb(169, 222, 249);
+}
+
+#unordered_list_title {
+    background-color: rgb(169, 222, 249);
+    color: darkblue;
+    font-size: 16pt;
+}
+
+.unordered_list_tag {
+    background-color: rgb(169, 222, 249);
+    color: darkblue;
+    border-radius: 100%;
+    padding: 15px;
+    width: 30px;
+}
+
+#unordered_list_title:hover  {
+    background-color: darkorange;
+    color: rgb(252, 246, 189);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#unordered_list li:hover {
+    list-style-type: square;
+    background-color: darkorange;
+    color: rgb(252, 246, 189);
+}
+
+/* ***************************************************************** */
+/* Styling for ordered list text */
+
+#ordered_list {
+    margin-left: 200px;
+}
+
+#ordered_list_title {
+    background-color: rgb(228, 193, 249);
+    color: blueviolet;
+    font-size: 16pt;
+}
+
+.ordered_list_tag {
+    background-color: rgb(228, 193, 249);
+    color: blueviolet;
+    border-radius: 100%;
+    padding: 15px;
+    width: 30px;
+}
+
+#ordered_list li {
+    background-color: blueviolet;
+    color: rgb(228, 193, 249);
+}
+
+#ordered_list_title:hover {
+    background-color: rgb(252, 246, 189);
+    color: darkorange;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#ordered_list li:hover {
+    list-style-type: lower-roman;
+    background-color: rgb(252, 246, 189);
+    color: darkorange;
+}
+
